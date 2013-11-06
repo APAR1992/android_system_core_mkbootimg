@@ -10,7 +10,6 @@ LOCAL_MODULE := mkbootimg
 include $(BUILD_HOST_EXECUTABLE)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE_TAGS := eng
 LOCAL_SRC_FILES := unpackbootimg.c
 LOCAL_MODULE := unpackbootimg
 include $(BUILD_HOST_EXECUTABLE)
@@ -40,4 +39,5 @@ LOCAL_FORCE_STATIC_EXECUTABLE := true
 include $(BUILD_EXECUTABLE)
 
 $(call dist-for-goals,dist_files,$(LOCAL_BUILT_MODULE))
+
 
